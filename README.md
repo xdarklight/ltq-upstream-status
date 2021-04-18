@@ -36,6 +36,12 @@ This includes the following SoC families:
 * implement a soc-info driver (for example as in `drivers/soc/amlogic/meson-mx-socinfo.c`)
   * this can then be used to identify the SoC in other drivers, for example the `ltq_cputemp.c` driver
   * see `meson_drm_soc_attrs` in `drivers/gpu/drm/meson/meson_drv.c` how this can be used from another driver
+* switch to the `drivers/mtd/nand/raw/intel-nand-controller.c` NAND driver
+  * `xway_nand.c` uses legacy raw NAND APIs which need to be updated anyways
+  * switching to the `intel-nand-controller.c` probably also means that we gain HW ECC support on xRX300 (xRX200 does not have HW ECC support yet)
+* switch to the `reset-intel-gw.c`
+  * according to the Intel LGM maintainers the reset IP is backwards compatible
+  * also according to them the `reset-lantiq.c` implementation has some issues, [see the full discussion](https://lkml.org/lkml/2019/8/23/18)
 
 ## xRX100
 
