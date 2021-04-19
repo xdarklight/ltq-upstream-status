@@ -62,3 +62,17 @@ This includes the following SoC families:
 * properly describe the registers for `ltq-cputemp.c` in .dts
 * upstream solution for the hardware-driven Ethernet PHY LEDs
   * another PHY has similar functionality so there was an [RFC patch-series](https://www.spinics.net/lists/linux-leds/msg17241.html) some time ago
+
+# Resources for developers
+
+## GSWIP
+
+This is the switch IP on xRX200, xRX300 and newer SoCs.
+The datasheet for the exact revision on these SoCs is not available.
+But there are two newer revisions of that IP whose datasheets are available publicly:
+* [GSW120](https://www.maxlinear.com/document/index?id=23265&languageid=1033&type=Datasheet&partnumber=GSW120&filename=617931_GSW120_DS_Rev1.3.pdf&part=GSW120)
+* [GSW140 daatsheet](https://www.maxlinear.com/document/index?id=23266&languageid=1033&type=Datasheet&partnumber=GSW140&filename=617930_GSW140_DS_Rev1.7.pdf&part=GSW140)
+
+## PEF70x1 Ethernet PHY
+
+There is a [public datasheet for MaxLinear's GPY111](https://www.maxlinear.com/document/index?id=23263&languageid=1033&type=Datasheet&partnumber=GPY111&filename=GPY111_PEF7071VV16_UM_HD_Rev1.4.pdf&part=GPY111), which seems to be the new name of the Intel/Lantiq PEF7071
