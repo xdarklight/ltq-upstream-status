@@ -42,6 +42,10 @@ This includes the following SoC families:
 * switch to the `reset-intel-gw.c`
   * according to the Intel LGM maintainers the reset IP is backwards compatible
   * also according to them the `reset-lantiq.c` implementation has some issues, [see the full discussion](https://lkml.org/lkml/2019/8/23/18)
+* DTS files for boards supported in OpenWrt
+  * Currently we maintain the dts files in OpenWrt, it would be nice to have them in the upstream kernel.
+  * Having them in the kernel could make changing the ABI harder.
+  * DTS file changes are ABI changes. These ABI changes would be needed for a better CGU and DMA driver.
 
 ## xRX100
 
@@ -50,10 +54,6 @@ This includes the following SoC families:
 * Update the `lantiq_xrx200.c` driver to support the Ethernet controller (MAC) in this SoC
   * The register layout is very similar and the DMA integration also seems to be (mostly?) identical
 * Write a DSA tag and DSA driver for the 3 port switch
-* DTS files for boards supported in OpenWrt
-  * Currently we maintain the dts files in OpenWrt, it would be nice to have them in the upstream kernel.
-  * Having them in the kernel could make changing the ABI harder.
-  * DTS file changes are ABI changes. These ABI changes would be needed for a better CGU and DMA driver.
 
 ## xRX200
 
