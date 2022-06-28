@@ -25,6 +25,7 @@ This includes the following SoC families:
   * latest patches from [@xdarklight](https://github.com/xdarklight/linux/tree/lantiq-pcie-20210109)
 * Update and use the [pcie-intel-gw](https://github.com/torvalds/linux/blob/v5.12-rc7/drivers/pci/controller/dwc/pcie-intel-gw.c) PCIe driver (xRX200 and xRX300 only)
   * the PCIe PHY driver is already upstreamed and used in OpenWrt, so only the PCIe controller driver is missing
+  * some details about the PCIe controller revisions can be found [in an early version of the pcie-intel-gw patches](https://lkml.org/lkml/2019/8/25/296)
   * latest patches from [@xdarklight](https://github.com/xdarklight/linux/tree/lantiq-pcie-20210109)
 * Refactoring of the IRQ controller driver to use a hierarchical chained IRQ chip
   * this means we can describe the MIPS CPU interrupt-controller in our .dts(i)
