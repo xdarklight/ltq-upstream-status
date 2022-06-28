@@ -44,6 +44,7 @@ This includes the following SoC families:
 * switch to the `reset-intel-gw.c`
   * according to the Intel LGM maintainers the reset IP is backwards compatible
   * also according to them the `reset-lantiq.c` implementation has some issues, [see the full discussion](https://lkml.org/lkml/2019/8/23/18)
+  * [patches sent upstream already](https://patchwork.kernel.org/project/linux-phy/list/?series=654598) in version 1, [changes for OpenWrt](https://github.com/xdarklight/openwrt/commit/361e089814d4d3f8c7c4592886d06d6a99c7a003)
 * DTS files for boards supported in OpenWrt
   * Currently we maintain the dts files in OpenWrt, it would be nice to have them in the upstream kernel.
   * Having them in the kernel could make changing the ABI harder.
