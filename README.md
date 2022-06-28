@@ -39,7 +39,8 @@ This includes the following SoC families:
   * see `meson_drm_soc_attrs` in `drivers/gpu/drm/meson/meson_drv.c` how this can be used from another driver
 * switch to the `drivers/mtd/nand/raw/intel-nand-controller.c` NAND driver
   * `xway_nand.c` uses legacy raw NAND APIs which need to be updated anyways
-  * switching to the `intel-nand-controller.c` probably also means that we gain HW ECC support on xRX300 (xRX200 does not have HW ECC support yet)
+  * switching to the `intel-nand-controller.c` probably also means that it will be easier to implement DMA based transfers and hardware ECC support on xRX300 (xRX200 does not have HW ECC support yet)
+  * [experimental driver changes](https://github.com/xdarklight/linux/tree/intel-nand-controller-next-20220628) (without DMA or HW ECC support) and [the corresponding .dts changes](https://github.com/xdarklight/openwrt/commit/bb13a8a8a141cc2f3880b91920c11b0e3c0ad740)
 * switch to the `reset-intel-gw.c`
   * according to the Intel LGM maintainers the reset IP is backwards compatible
   * also according to them the `reset-lantiq.c` implementation has some issues, [see the full discussion](https://lkml.org/lkml/2019/8/23/18)
