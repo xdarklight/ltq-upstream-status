@@ -65,6 +65,7 @@ This includes the following SoC families:
 * properly describe the registers for `ltq-cputemp.c` in .dts
 * upstream solution for the hardware-driven Ethernet PHY LEDs
   * another PHY has similar functionality so there was an [RFC patch-series](https://www.spinics.net/lists/linux-leds/msg17241.html) some time ago
+* describe the fixed-link of GSWIP's CPU port [see upstream discussion for more information](https://lore.kernel.org/netdev/20220724003039.462iuanyzcx7gsr4@bang-olufsen.dk/t/)
 
 # Resources for developers
 
