@@ -65,7 +65,6 @@ This includes the following SoC families:
 * properly describe the registers for `ltq-cputemp.c` in .dts
 * upstream solution for the hardware-driven Ethernet PHY LEDs
   * another PHY has similar functionality so there was an [RFC patch-series](https://www.spinics.net/lists/linux-leds/msg17241.html) some time ago and an updated [RFC patch-series](https://www.spinics.net/lists/netdev/msg817414.html) based on the first one
-* describe the fixed-link of GSWIP's CPU port [see upstream discussion for more information](https://lore.kernel.org/netdev/20220724003039.462iuanyzcx7gsr4@bang-olufsen.dk/t/)
 * use `dev_err_probe()` in `gswip_probe()` to fix probe deferral errors such as `gswip 1e108000.switch: dsa switch register failed: -517`
   * `/sys/kernel/debug/devices_deferred` has all information related to the deferred devices, including the message passed to `dev_err_probe()`
 
