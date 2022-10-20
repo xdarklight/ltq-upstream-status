@@ -67,6 +67,8 @@ This includes the following SoC families:
   * another PHY has similar functionality so there was an [RFC patch-series](https://www.spinics.net/lists/linux-leds/msg17241.html) some time ago and an updated [RFC patch-series](https://www.spinics.net/lists/netdev/msg817414.html) based on the first one
 * use `dev_err_probe()` in `gswip_probe()` to fix probe deferral errors such as `gswip 1e108000.switch: dsa switch register failed: -517`
   * `/sys/kernel/debug/devices_deferred` has all information related to the deferred devices, including the message passed to `dev_err_probe()`
+* Making the DSA selftests pass with the GSWIP driver
+  * work-in-progress by @sch-m and @xdarklight
 
 # Resources for developers
 
